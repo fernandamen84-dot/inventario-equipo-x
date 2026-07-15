@@ -50,5 +50,5 @@ class ProductoDAO:
                 conn.commit()
             except sqlite3.Error as e:
                 conn.rollback()
-                 raise RuntimeError(f"Error al actualizar stock: {e}")
+                raise RuntimeError(f"Error al actualizar stock: {e}")
               
