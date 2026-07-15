@@ -1,12 +1,32 @@
-# 📦 Sistema de Inventario OOP
+# \# Sistema de Inventario OOP
 
-## Equipo - 4 Integrantes
+# 
 
-| Rol | Integrante |
-|-----|------------|
-| **Líder/Arquitecto** | Fernanda |
-| **Backend DAO** | [Nombre] |
-| **Lógica Negocio** | [Nombre] |
-| **QA/Pruebas** | [Nombre] |
+# \## Equipo - 4 Integrantes
 
-## 🏗️ Diagrama de Clases
+# 
+
+# | Rol | Integrante |
+
+# |-----|------------|
+
+# | \*\*Líder/Arquitecto\*\* | Fernanda |
+
+# | \*\*Backend DAO\*\* | \[Nombre] |
+
+# | \*\*Lógica Negocio\*\* | \[Nombre] |
+
+# | \*\*QA/Pruebas\*\* | \[Nombre] |
+
+# 
+
+# \---
+
+# 
+
+# \## Diagrama de Clases
+
+# 
+
+# \[Tu diagrama aquí]
+

@@ -1,35 +1,24 @@
-import sqlite3
-import os
-from dotenv import load_dotenv
-
-# Cargar variables de entorno desde .env
-load_dotenv()
-
-# Obtener ruta de BD desde .env o usar valor por defecto
-DB_PATH = os.getenv('DB_PATH', 'inventario.db')
-
-def get_connection():
-    """
-    Retorna conexión a SQLite con Row factory
-    Permite acceder por nombre de columna: fila['nombre']
-    """
-    conn = sqlite3.connect(DB_PATH)
-    conn.row_factory = sqlite3.Row
-    return conn
-
-def init_db():
-    """
-    Crea la tabla 'productos' si no existe
-    Usa 'with' para manejar la conexión automáticamente
-    """
-    with get_connection() as conn:
-        conn.execute('''
-            CREATE TABLE IF NOT EXISTS productos (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                nombre TEXT NOT NULL,
-                precio REAL NOT NULL,
-                stock INTEGER NOT NULL
-            )
-        ''')
-        conn.commit()
-        print("✅ Base de datos inicializada correctamente")
+import sqlite3 
+import os 
+from dotenv import load_dotenv 
+ 
+load_dotenv() 
+DB_PATH = os.getenv('DB_PATH', 'inventario.db') 
+ 
+def get_connection(): 
+    conn = sqlite3.connect(DB_PATH) 
+    conn.row_factory = sqlite3.Row 
+    return conn 
+ 
+def init_db(): 
+    with get_connection() as conn: 
+        conn.execute(''' 
+            CREATE TABLE IF NOT EXISTS productos ( 
+                id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                nombre TEXT NOT NULL, 
+                precio REAL NOT NULL, 
+                stock INTEGER NOT NULL 
+            ) 
+        ''') 
+        conn.commit() 
+        print("Base de datos inicializada correctamente") 

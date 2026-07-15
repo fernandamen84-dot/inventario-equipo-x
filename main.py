@@ -1,28 +1,18 @@
-from src.db import init_db
-from src.modelo import Producto
-from src.dao import ProductoDAO
-from src.servicio import InventarioService
-from src.excepciones import StockInsuficienteError, ProductoNoEncontradoError
-import sqlite3
-
-def main():
-    """Función principal del sistema de inventario"""
-    print("🚀 Sistema de Inventario OOP")
-    print("=" * 45)
-    
-    # 1. Inicializar base de datos
-    init_db()
-    
-    # 2. Menú de opciones (para la demo)
-    print("\n📦 Sistema listo para usar")
-    print("💡 Para probar, ejecuta: python -m unittest")
-    print("\n🔧 Opciones disponibles:")
-    print("   1. Agregar producto")
-    print("   2. Vender producto")
-    print("   3. Buscar producto")
-    print("   4. Salir")
-    
-    # Aquí irá la lógica del menú (se completará en la integración)
-
-if __name__ == "__main__":
-    main()
+from src.db import init_db 
+from src.modelo import Producto 
+from src.dao import ProductoDAO 
+from src.servicio import InventarioService 
+from src.excepciones import StockInsuficienteError, ProductoNoEncontradoError 
+import sqlite3 
+ 
+def main(): 
+    print("Sistema de Inventario OOP") 
+    print("=" * 45) 
+ 
+    init_db() 
+ 
+    print("\nSistema listo para usar") 
+    print("Para probar, ejecuta: python -m unittest") 
+ 
+if __name__ == "__main__": 
+    main() 
