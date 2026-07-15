@@ -12,11 +12,11 @@
 
 # | \*\*Líder/Arquitecto\*\* | Fernanda |
 
-# | \*\*Backend DAO\*\* | \[Nombre] |
+# | \*\*Backend DAO\*\* | \[Tania] |
 
-# | \*\*Lógica Negocio\*\* | \[Nombre] |
+# | \*\*Lógica Negocio\*\* | \[Fernanda Carpio] |
 
-# | \*\*QA/Pruebas\*\* | \[Nombre] |
+# | \*\*QA/Pruebas\*\* | \[David] |
 
 # 
 
